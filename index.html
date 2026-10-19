@@ -82,7 +82,7 @@ html.l-en .ko { display: none; }
 .hero { display: grid; gap: 24px; padding: 48px 0 40px; border-bottom: 1px solid var(--rule); }
 @media (min-width: 820px) { .hero { grid-template-columns: minmax(0, 1fr) auto; align-items: end; } }
 .kicker { font-size: 11.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
-.name { margin-top: 12px; font-family: var(--serif); font-weight: 700; font-size: clamp(38px, 6vw, 54px); line-height: 1.08; letter-spacing: -0.015em; }
+.name { margin-top: 0; font-family: var(--serif); font-weight: 700; font-size: clamp(38px, 6vw, 54px); line-height: 1.08; letter-spacing: -0.015em; }
 .name .cred { font-family: var(--sans); font-size: 0.42em; font-weight: 600; letter-spacing: 0.01em; color: var(--accent); margin-left: 0.15em; white-space: nowrap; }
 .name-sub { margin-top: 6px; font-size: 14px; color: var(--faint); letter-spacing: 0.04em; }
 .titles { margin-top: 16px; display: grid; gap: 2px; color: var(--muted); }
@@ -204,7 +204,7 @@ details.more summary { cursor: pointer; color: var(--accent); font-weight: 500; 
 <div class="wrap">
 
   <header class="topbar">
-    <div class="mark">SJ.<small><span class="ko">이력서</span><span class="en">Curriculum Vitae</span></small></div>
+    <div class="mark">SJ<small><span class="ko">이력서</span><span class="en">Curriculum Vitae</span></small></div>
     <div class="actions">
       <button type="button" class="btn" id="lang-btn" aria-label="Switch language"><span class="ko">English</span><span class="en">한국어</span></button>
       <a class="btn" id="pdf-btn" href="cv-ko.pdf" download>
@@ -216,17 +216,16 @@ details.more summary { cursor: pointer; color: var(--accent); font-weight: 500; 
 
   <section class="hero">
     <div>
-      <p class="kicker"><span class="ko">대한민국 육군 대위 · 군의관</span><span class="en">Captain, Medical Officer · Republic of Korea Army</span></p>
       <h1 class="name"><span class="ko">주성준</span><span class="en">Sungjun Joo</span><span class="cred">, M.D. (K.M.D.), M.S.</span></h1>
       <p class="name-sub"><span class="ko">Sungjun Joo</span><span class="en">주성준</span></p>
       <div class="titles">
+        <p><span class="ko">대한민국 육군 대위 · 군의관</span><span class="en">Captain, Medical Officer · Republic of Korea Army</span></p>
         <p><span class="ko">한방재활의학과 전문의 · 한의학 석사 · 원광대학교 한의학과 박사과정</span><span class="en">Board-certified Specialist in Korean Rehabilitation Medicine · M.S. in Korean Medicine · Ph.D. student, Wonkwang University</span></p>
         <p><span class="ko">한국방송통신대학교 통계·데이터과학과 재학 (컴퓨터과학과 복수전공 예정)</span><span class="en">Statistics &amp; Data Science, Korea National Open University (planned double major in Computer Science)</span></p>
       </div>
     </div>
     <dl class="contact">
       <dt>Email</dt><dd><a href="mailto:sj.joo.kor@gmail.com">sj.joo.kor@gmail.com</a></dd>
-      <dt>Web</dt><dd><a href="https://medmonster.github.io/cv/">medmonster.github.io/cv</a></dd>
     </dl>
   </section>
 
@@ -334,8 +333,8 @@ details.more summary { cursor: pointer; color: var(--accent); font-weight: 500; 
             <div class="body">
               <p class="t"><span class="ko">육군 대위 · 군의관 (국방부 군의사관 55기)</span><span class="en">Captain, Medical Officer · Republic of Korea Army (Military Medical Officer Class 55)</span></p>
               <ul class="nested">
-                <li><span><span class="ko">국방부 근무지원단 의무실 군의관</span><span class="en">Medical Officer, Medical Clinic, Ministry of National Defense Support Group</span></span><span class="date">2026.04 – <span class="ko">현재</span><span class="en">Present</span></span></li>
-                <li><span><span class="ko">육군 2군단 제15보병사단 의무대대 군의관</span><span class="en">Medical Officer, Medical Battalion, 15th Infantry Division, II Corps</span></span><span class="date">2025.04 – 2026.04</span></li>
+                <li><span><span class="ko">국방부 근무지원단 의무실</span><span class="en">Medical Clinic, Ministry of National Defense Support Group</span></span><span class="date">2026.04 – <span class="ko">현재</span><span class="en">Present</span></span></li>
+                <li><span><span class="ko">육군 2군단 제15보병사단 의무대대</span><span class="en">Medical Battalion, 15th Infantry Division, II Corps</span></span><span class="date">2025.04 – 2026.04</span></li>
               </ul>
             </div>
           </div>
