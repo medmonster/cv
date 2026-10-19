@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>주성준 · Sungjun Joo — CV</title>
+<meta name="description" content="주성준 (Sungjun Joo) — 육군 대위 군의관, 한방재활의학과 전문의, 한의학 박사과정, 방송대 통계·데이터과학과 재학">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --ink: #16191D;
+  --muted: #4A525B;
+  --faint: #737B84;
+  --rule: #E3E6EA;
+  --accent: #3D5A2A;
+  --accent-tint: #EEF2E8;
+  --serif: "Source Serif 4", "Noto Serif KR", Georgia, serif;
+  --sans: "Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121416;
+    --ink: #E7E9EC;
+    --muted: #B2B8BF;
+    --faint: #8A9199;
+    --rule: #2A2E33;
+    --accent: #A9C38A;
+    --accent-tint: #1E2619;
+    color-scheme: dark;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 0.2em; }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+
+/* 언어 전환: 기본은 한국어 */
+.en { display: none; }
+html.l-en .en { display: revert; }
+html.l-en .ko { display: none; }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 max(20px, env(safe-area-inset-right)) 0 max(20px, env(safe-area-inset-left)); }
+
+/* 상단 막대 */
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.mark { display: flex; align-items: baseline; gap: 12px; font-weight: 700; letter-spacing: -0.01em; }
+.mark small { font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--faint); }
+.actions { display: flex; gap: 8px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 14px;
+  border: 1px solid var(--rule); border-radius: 6px;
+  background: var(--bg); color: var(--ink);
+  font: inherit; font-size: 13px; font-weight: 500;
+  text-decoration: none; cursor: pointer;
+}
+.btn:hover { border-color: var(--ink); color: var(--ink); }
+.btn svg { width: 14px; height: 14px; }
+
+/* 머리글 */
+.hero { display: grid; gap: 24px; padding: 48px 0 40px; border-bottom: 1px solid var(--rule); }
+@media (min-width: 820px) { .hero { grid-template-columns: minmax(0, 1fr) auto; align-items: end; } }
+.kicker { font-size: 11.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
+.name { margin-top: 12px; font-family: var(--serif); font-weight: 700; font-size: clamp(38px, 6vw, 54px); line-height: 1.08; letter-spacing: -0.015em; }
+.name .dot { color: var(--accent); }
+.name-sub { margin-top: 6px; font-size: 14px; color: var(--faint); letter-spacing: 0.04em; }
+.titles { margin-top: 16px; display: grid; gap: 2px; color: var(--muted); }
+.contact { display: grid; grid-template-columns: auto auto; gap: 6px 18px; font-size: 13.5px; align-content: end; }
+.contact dt { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); padding-top: 2px; }
+
+/* 본문 2단 */
+.layout { display: grid; gap: 32px; padding: 40px 0 64px; }
+@media (min-width: 820px) { .layout { grid-template-columns: 200px minmax(0, 1fr); gap: 48px; } }
+.side { display: none; }
+@media (min-width: 820px) {
+  .side { display: block; position: sticky; top: 24px; align-self: start; }
+}
+.side-label { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint); margin-bottom: 10px; }
+.toc { display: grid; gap: 6px; font-size: 13.5px; counter-reset: toc; }
+.toc a { display: flex; gap: 10px; color: var(--muted); text-decoration: none; }
+.toc a::before { counter-increment: toc; content: counter(toc, decimal-leading-zero); font-variant-numeric: tabular-nums; color: var(--faint); font-size: 12px; padding-top: 1px; }
+.toc a:hover, .toc a.on { color: var(--accent); }
+.side-block { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--rule); }
+.stats { display: grid; gap: 14px; }
+.stat b { display: block; font-family: var(--serif); font-size: 26px; line-height: 1.1; font-weight: 700; }
+.stat b small { font-family: var(--sans); font-size: 13px; color: var(--faint); font-weight: 500; margin-left: 2px; }
+.stat span { font-size: 12.5px; color: var(--muted); }
+
+/* 섹션 */
+.sec { padding-bottom: 36px; margin-bottom: 36px; border-bottom: 1px solid var(--rule); scroll-margin-top: 20px; }
+.sec:last-child { border-bottom: 0; margin-bottom: 0; }
+.sec-h { display: flex; align-items: baseline; gap: 12px; margin-bottom: 20px; font-family: var(--serif); font-size: 23px; font-weight: 700; letter-spacing: -0.01em; }
+.sec-h .no { font-family: var(--sans); font-size: 12px; font-weight: 600; color: var(--accent); background: var(--accent-tint); padding: 2px 7px; border-radius: 4px; }
+.sec-h .count { font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--faint); }
+.sub-h { margin: 26px 0 12px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); }
+.sub-h:first-of-type { margin-top: 0; }
+
+.items { display: grid; gap: 18px; }
+.item { display: grid; gap: 2px 20px; }
+@media (min-width: 560px) { .item { grid-template-columns: minmax(0, 1fr) auto; } .item > .date { grid-column: 2; grid-row: 1; } .item > .body { grid-column: 1; grid-row: 1 / span 2; } }
+.date { font-size: 13px; color: var(--faint); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.body { min-width: 0; }
+.t { font-weight: 600; font-size: 15.5px; line-height: 1.45; }
+.d { color: var(--muted); font-size: 14px; }
+.d + .d { margin-top: 1px; }
+.nested { margin-top: 8px; padding-left: 14px; border-left: 2px solid var(--rule); display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
+.nested li { display: flex; flex-wrap: wrap; gap: 0 10px; }
+.nested .date { font-size: 12.5px; }
+
+.callout { margin-top: 12px; padding: 14px 16px; background: var(--accent-tint); border-radius: 8px; font-size: 14px; }
+.callout-row { display: grid; gap: 2px 14px; }
+@media (min-width: 560px) { .callout-row { grid-template-columns: 112px minmax(0, 1fr); } }
+.callout-row + .callout-row { margin-top: 8px; }
+.callout dt { font-size: 12.5px; color: var(--faint); padding-top: 1px; }
+.gpa { font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--accent); line-height: 1.2; }
+.gpa small { font-family: var(--sans); font-size: 13px; color: var(--muted); font-weight: 500; }
+
+details.more { margin-top: 10px; font-size: 13.5px; }
+details.more summary { cursor: pointer; color: var(--accent); font-weight: 500; width: fit-content; }
+.grades { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13.5px; }
+.grades caption { text-align: left; font-weight: 600; padding: 8px 0 4px; }
+.grades th { text-align: left; font-weight: 500; font-size: 12px; color: var(--faint); padding: 4px 0; border-bottom: 1px solid var(--rule); }
+.grades td { padding: 5px 0; border-bottom: 1px solid var(--rule); }
+.grades .r { text-align: right; font-variant-numeric: tabular-nums; width: 64px; }
+.terms { display: grid; gap: 4px 28px; }
+@media (min-width: 680px) { .terms { grid-template-columns: 1fr 1fr; } }
+
+.pub .t { font-size: 15px; }
+.pub .alt { color: var(--muted); font-size: 13.5px; margin-top: 1px; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-top: 5px; font-size: 13px; color: var(--muted); }
+.meta i { font-style: italic; color: var(--ink); }
+.badge { font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 4px; border: 1px solid var(--accent); color: var(--accent); letter-spacing: 0.02em; }
+.badge.solid { background: var(--accent); color: var(--bg); }
+.first { font-weight: 600; color: var(--accent); }
+.doi { font-size: 12.5px; color: var(--faint); word-break: break-all; }
+
+.foot { padding: 20px 0 40px; border-top: 1px solid var(--rule); font-size: 12.5px; color: var(--faint); }
+
+/* 인쇄(PDF) */
+@page { size: A4; margin: 14mm 15mm; }
+@media print {
+  :root { --bg: #fff; --ink: #111; --muted: #3c434a; --faint: #666d74; --rule: #dcdfe3; --accent: #3D5A2A; --accent-tint: #f1f4ec; }
+  body { font-size: 9.5pt; line-height: 1.4; }
+  .topbar, .side, details.more, .no-print { display: none !important; }
+  .wrap { max-width: none; padding: 0; }
+  .hero { padding: 0 0 14px; gap: 10px; grid-template-columns: minmax(0, 1fr) auto; align-items: end; }
+  .name { font-size: 26pt; margin-top: 4px; }
+  .titles { margin-top: 8px; font-size: 9.5pt; }
+  .contact { font-size: 9pt; }
+  .layout { display: block; padding: 14px 0 0; }
+  .sec { padding-bottom: 9px; margin-bottom: 9px; }
+  .sec-h { font-size: 13.5pt; margin-bottom: 9px; }
+  .sub-h { margin: 12px 0 6px; font-size: 8pt; }
+  .items { gap: 5px; }
+  .item { grid-template-columns: minmax(0, 1fr) auto; break-inside: avoid; }
+  .item > .date { grid-column: 2; grid-row: 1; }
+  .item > .body { grid-column: 1; grid-row: 1 / span 2; }
+  .t, .pub .t { font-size: 9.5pt; }
+  .meta { margin-top: 2px; }
+  .nested { margin-top: 3px; gap: 1px; }
+  .d, .pub .alt, .meta, .nested, .callout { font-size: 8.5pt; }
+  .date { font-size: 8.5pt; }
+  .doi { font-size: 8pt; }
+  .callout { padding: 8px 10px; }
+  .callout-row { grid-template-columns: 90px minmax(0, 1fr); }
+  .gpa { font-size: 14pt; }
+  .callout { break-inside: avoid; }
+  a { text-decoration: none; }
+  .foot { border: 0; padding: 10px 0 0; font-size: 8pt; }
+}
+</style>
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search).get('lang');
+    var saved = null;
+    try { saved = localStorage.getItem('cv-lang'); } catch (e) {}
+    var lang = q === 'en' || q === 'ko' ? q : (saved === 'en' || saved === 'ko' ? saved : 'ko');
+    if (lang === 'en') { document.documentElement.classList.add('l-en'); document.documentElement.lang = 'en'; }
+  })();
+</script>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <div class="mark">SJ.<small><span class="ko">이력서</span><span class="en">Curriculum Vitae</span></small></div>
+    <div class="actions">
+      <button type="button" class="btn" id="lang-btn" aria-label="Switch language"><span class="ko">English</span><span class="en">한국어</span></button>
+      <a class="btn" id="pdf-btn" href="cv-ko.pdf" download>
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v8m0 0L5 7m3 3 3-3M3 13h10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="ko">PDF 내려받기</span><span class="en">Download PDF</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="kicker"><span class="ko">대한민국 육군 대위 · 군의관</span><span class="en">Captain, Medical Officer · Republic of Korea Army</span></p>
+      <h1 class="name"><span class="ko">주성준<span class="dot">.</span></span><span class="en">Sungjun Joo<span class="dot">.</span></span></h1>
+      <p class="name-sub"><span class="ko">Sungjun Joo</span><span class="en">주성준</span></p>
+      <div class="titles">
+        <p><span class="ko">한방재활의학과 전문의 · 한의학 석사 · 원광대학교 한의학과 박사과정</span><span class="en">Board-certified Specialist in Korean Rehabilitation Medicine · M.S. in Korean Medicine · Ph.D. student, Wonkwang University</span></p>
+        <p><span class="ko">한국방송통신대학교 통계·데이터과학과 재학 (컴퓨터과학과 복수전공 예정)</span><span class="en">Statistics &amp; Data Science, Korea National Open University (planned double major in Computer Science)</span></p>
+      </div>
+    </div>
+    <dl class="contact">
+      <dt>Email</dt><dd><a href="mailto:sj.joo.kor@gmail.com">sj.joo.kor@gmail.com</a></dd>
+      <dt>Web</dt><dd><a href="https://medmonster.github.io/cv/">medmonster.github.io/cv</a></dd>
+    </dl>
+  </section>
+
+  <div class="layout">
+    <aside class="side" aria-label="Contents">
+      <p class="side-label"><span class="ko">목차</span><span class="en">Contents</span></p>
+      <nav class="toc">
+        <a href="#education"><span class="ko">학력</span><span class="en">Education</span></a>
+        <a href="#experience"><span class="ko">경력</span><span class="en">Experience</span></a>
+        <a href="#publications"><span class="ko">논문</span><span class="en">Publications</span></a>
+        <a href="#projects"><span class="ko">연구과제</span><span class="en">Research projects</span></a>
+        <a href="#talks"><span class="ko">강의·발표</span><span class="en">Talks &amp; posters</span></a>
+        <a href="#awards"><span class="ko">수상·장학</span><span class="en">Awards</span></a>
+        <a href="#certs"><span class="ko">자격·활동</span><span class="en">Licenses &amp; activities</span></a>
+      </nav>
+      <div class="side-block">
+        <p class="side-label"><span class="ko">요약</span><span class="en">At a glance</span></p>
+        <div class="stats">
+          <div class="stat"><b>13<small><span class="ko">편</span><span class="en">papers</span></small></b><span>SCIE 4 · KCI 7 · <span class="ko">제1저자 4</span><span class="en">first author 4</span></span></div>
+          <div class="stat"><b>4.42<small>/ 4.5</small></b><span><span class="ko">통계·데이터과학과 평점</span><span class="en">GPA, Statistics &amp; Data Science</span></span></div>
+          <div class="stat"><b>ADsP</b><span><span class="ko">데이터분석 준전문가</span><span class="en">Advanced Data Analytics Semi-Professional</span></span></div>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <!-- 01 학력 -->
+      <section class="sec" id="education">
+        <h2 class="sec-h"><span class="no">01</span><span class="ko">학력</span><span class="en">Education</span></h2>
+        <div class="items">
+          <div class="item">
+            <p class="date">2025.09 – <span class="ko">현재</span><span class="en">Present</span></p>
+            <div class="body">
+              <p class="t"><span class="ko">국립한국방송통신대학교</span><span class="en">Korea National Open University</span></p>
+              <p class="d"><span class="ko">자연과학대학 통계·데이터과학과 재학 · 컴퓨터과학과 복수전공 예정</span><span class="en">B.S. student, Dept. of Statistics &amp; Data Science · planned double major in Computer Science</span></p>
+              <dl class="callout">
+                <div class="callout-row"><dt><span class="ko">누적 평점</span><span class="en">GPA</span></dt><dd><span class="gpa">4.42 <small>/ 4.5</small></span> <small class="d"><span class="ko">· 2개 학기 40학점, A+ 11과목 · A0 2과목</span><span class="en">· 2 semesters, 40 credits; A+ in 11 of 13 graded courses</span></small></dd></div>
+                <div class="callout-row"><dt><span class="ko">주요 이수 과목</span><span class="en">Coursework</span></dt><dd><span class="ko">데이터마이닝, 인공지능, 선형대수, 수리통계학, AI를위한수학의응용, 파이썬데이터처리, 오픈소스기반데이터분석, 데이터시각화, R컴퓨팅, 바이오통계학, 이산수학</span><span class="en">Data Mining, Artificial Intelligence, Linear Algebra, Mathematical Statistics, Applied Mathematics for AI, Python Data Processing, Open-source Data Analysis, Data Visualization, R Computing, Biostatistics, Discrete Mathematics</span></dd></div>
+              </dl>
+              <details class="more">
+                <summary><span class="ko">과목별 성적 보기 (14과목)</span><span class="en">Show course grades (14 courses)</span></summary>
+                <div class="terms">
+                  <table class="grades">
+                    <caption><span class="ko">2026학년도 1학기 · 평점 4.4</span><span class="en">Spring 2026 · GPA 4.4</span></caption>
+                    <thead><tr><th><span class="ko">과목</span><span class="en">Course</span></th><th class="r"><span class="ko">등급</span><span class="en">Grade</span></th><th class="r"><span class="ko">점수</span><span class="en">Score</span></th></tr></thead>
+                    <tbody>
+                      <tr><td><span class="ko">데이터마이닝</span><span class="en">Data Mining</span></td><td class="r">A+</td><td class="r">100</td></tr>
+                      <tr><td><span class="ko">AI를위한수학의응용</span><span class="en">Applied Mathematics for AI</span></td><td class="r">A+</td><td class="r">98</td></tr>
+                      <tr><td><span class="ko">데이터시각화</span><span class="en">Data Visualization</span></td><td class="r">A+</td><td class="r">100</td></tr>
+                      <tr><td><span class="ko">인공지능 (컴퓨터과학과)</span><span class="en">Artificial Intelligence (CS)</span></td><td class="r">A0</td><td class="r">92</td></tr>
+                      <tr><td><span class="ko">엑셀데이터분석</span><span class="en">Excel Data Analysis</span></td><td class="r">A+</td><td class="r">100</td></tr>
+                      <tr><td><span class="ko">이산수학 (컴퓨터과학과)</span><span class="en">Discrete Mathematics (CS)</span></td><td class="r">A+</td><td class="r">100</td></tr>
+                      <tr><td><span class="ko">R컴퓨팅</span><span class="en">R Computing</span></td><td class="r">A+</td><td class="r">98</td></tr>
+                    </tbody>
+                  </table>
+                  <table class="grades">
+                    <caption><span class="ko">2025학년도 2학기 · 평점 4.4</span><span class="en">Fall 2025 · GPA 4.4</span></caption>
+                    <thead><tr><th><span class="ko">과목</span><span class="en">Course</span></th><th class="r"><span class="ko">등급</span><span class="en">Grade</span></th><th class="r"><span class="ko">점수</span><span class="en">Score</span></th></tr></thead>
+                    <tbody>
+                      <tr><td><span class="ko">수리통계학</span><span class="en">Mathematical Statistics</span></td><td class="r">A+</td><td class="r">98</td></tr>
+                      <tr><td><span class="ko">바이오통계학</span><span class="en">Biostatistics</span></td><td class="r">A+</td><td class="r">100</td></tr>
+                      <tr><td><span class="ko">파이썬데이터처리</span><span class="en">Python Data Processing</span></td><td class="r">A+</td><td class="r">96</td></tr>
+                      <tr><td><span class="ko">선형대수 (컴퓨터과학과)</span><span class="en">Linear Algebra (CS)</span></td><td class="r">A+</td><td class="r">100</td></tr>
+                      <tr><td><span class="ko">오픈소스기반데이터분석 (컴퓨터과학과)</span><span class="en">Open-source Data Analysis (CS)</span></td><td class="r">A+</td><td class="r">98</td></tr>
+                      <tr><td><span class="ko">파이썬컴퓨팅</span><span class="en">Python Computing</span></td><td class="r">A0</td><td class="r">90</td></tr>
+                      <tr><td><span class="ko">원격대학교육의이해 (교양 1학점)</span><span class="en">Intro to Distance Education (1 credit)</span></td><td class="r">P</td><td class="r">100</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="d" style="margin-top:8px"><span class="ko">4.5 만점 · P(통과) 과목은 평점 계산 제외 · 2026학년도 1학기까지</span><span class="en">4.5 scale · pass/fail course excluded from GPA · through Spring 2026</span></p>
+              </details>
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">2024.09 – <span class="ko">현재</span><span class="en">Present</span></p>
+            <div class="body">
+              <p class="t"><span class="ko">원광대학교 대학원 한의학과 박사과정</span><span class="en">Wonkwang University, Graduate School</span></p>
+              <p class="d"><span class="ko">진단학교실</span><span class="en">Ph.D. student in Korean Medicine, Dept. of Diagnostics</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">2022.09 – 2024.08</p>
+            <div class="body">
+              <p class="t"><span class="ko">경희대학교 대학원 임상한의학과 석사</span><span class="en">Kyung Hee University, Graduate School</span></p>
+              <p class="d"><span class="ko">한의약임상연구학교실 · 한의학 석사 (한의약임상연구학 전공)</span><span class="en">M.S. in Korean Medicine, Dept. of Clinical Korean Medicine (Clinical Research of Korean Medicine)</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">2014.03 – 2020.02</p>
+            <div class="body">
+              <p class="t"><span class="ko">대구한의대학교 한의과대학 한의학과 학사</span><span class="en">Daegu Haany University, College of Korean Medicine</span></p>
+              <p class="d en">Bachelor of Korean Medicine</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 경력 -->
+      <section class="sec" id="experience">
+        <h2 class="sec-h"><span class="no">02</span><span class="ko">경력</span><span class="en">Experience</span></h2>
+        <h3 class="sub-h"><span class="ko">군 복무</span><span class="en">Military service</span></h3>
+        <div class="items">
+          <div class="item">
+            <p class="date">2025.04 – <span class="ko">현재</span><span class="en">Present</span></p>
+            <div class="body">
+              <p class="t"><span class="ko">육군 대위 · 군의관 (국방부 의무사관 55기)</span><span class="en">Captain, Medical Officer · Republic of Korea Army (Medical Officer Class 55)</span></p>
+              <ul class="nested">
+                <li><span><span class="ko">국방부 근무지원단 의무실 군의관</span><span class="en">Medical Officer, Medical Clinic, Ministry of National Defense Support Group</span></span><span class="date">2026.04 – <span class="ko">현재</span><span class="en">Present</span></span></li>
+                <li><span><span class="ko">육군 2군단 제15보병사단 의무대대 군의관</span><span class="en">Medical Officer, Medical Battalion, 15th Infantry Division, II Corps</span></span><span class="date">2025.04 – 2026.04</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <h3 class="sub-h"><span class="ko">임상 수련</span><span class="en">Clinical training</span></h3>
+        <div class="items">
+          <div class="item">
+            <p class="date">2022.03 – 2025.02</p>
+            <div class="body">
+              <p class="t"><span class="ko">동신한방병원 한방재활의학과 전문수련의 수료</span><span class="en">Resident, Korean Rehabilitation Medicine, Dongshin Korean Medicine Hospital</span></p>
+              <ul class="nested">
+                <li><span><span class="ko">의국장</span><span class="en">Chief Resident</span></span><span class="date">2023.10 – 2024.09</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">2021.03 – 2022.02</p>
+            <div class="body">
+              <p class="t"><span class="ko">동신한방병원 일반수련의 수료</span><span class="en">Intern, Dongshin Korean Medicine Hospital</span></p>
+            </div>
+          </div>
+        </div>
+        <h3 class="sub-h"><span class="ko">학부 연구</span><span class="en">Undergraduate research</span></h3>
+        <div class="items">
+          <div class="item">
+            <p class="date">2019.04 – 2019.12</p>
+            <div class="body">
+              <p class="t"><span class="ko">한국연구재단 생애 첫 연구사업 학부생 연구원</span><span class="en">Undergraduate Researcher, NRF First Research Grant project</span></p>
+              <p class="d"><span class="ko">대구한의대 포항한방병원</span><span class="en">Pohang Korean Medicine Hospital, Daegu Haany University</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">2017 · 2018</p>
+            <div class="body">
+              <p class="t"><span class="ko">동신한방병원 학부생 연구 프로그램</span><span class="en">Undergraduate Research Program, Dongshin Korean Medicine Hospital</span></p>
+              <p class="d">2017.07 – 2017.08, 2018.01 – 2018.02</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 논문 -->
+      <section class="sec" id="publications">
+        <h2 class="sec-h"><span class="no">03</span><span class="ko">논문</span><span class="en">Publications</span><span class="count">SCIE 4 · KCI 7 · <span class="ko">총 13편</span><span class="en">13 total</span></span></h2>
+        <ol class="items">
+          <li class="item pub">
+            <p class="date">2026.06</p>
+            <div class="body">
+              <p class="t"><span class="ko">국내 경추부 질환 침도 치료의 임상 적용 양상과 안전성 보고: 주제범위 문헌고찰</span><span class="en">Clinical Application Patterns and Safety Reporting of Acupotomy for Cervical Disorders in Korea: A Scoping Review</span></p>
+              <p class="alt ko">Clinical Application Patterns and Safety Reporting of Acupotomy for Cervical Disorders in Korea: A Scoping Review</p>
+              <p class="meta"><i><span class="ko">대한침도의학회지</span><span class="en">J. Korean Med. Soc. Acupotomology</span></i><span>10(1):1–18</span><span class="badge">KCI</span><span><span class="ko">공저자</span><span class="en">Co-author</span></span><a class="doi" href="https://doi.org/10.54461/JAcupotomy.2026.10.1.1">doi:10.54461/JAcupotomy.2026.10.1.1</a></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2025.09</p>
+            <div class="body">
+              <p class="t"><span class="ko">첩대요법 연구 동향: 국내 학술지 데이터베이스 기반 주제범위 문헌고찰</span><span class="en">Taping Therapy in Korean Medicine: A Scoping Review</span></p>
+              <p class="alt ko">Taping Therapy in Korean Medicine: A Scoping Review</p>
+              <p class="meta"><i><span class="ko">대한한의학회지</span><span class="en">Journal of Korean Medicine</span></i><span>46(3):232–253</span><span class="badge">KCI</span><span><span class="ko">공저자</span><span class="en">Co-author</span></span><a class="doi" href="https://doi.org/10.13048/jkm.25047">doi:10.13048/jkm.25047</a></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2025.09</p>
+            <div class="body">
+              <p class="t">Response to Korean medicine with acupotomy in patients with cognitive impairment in primary care: A multicenter registry protocol</p>
+              <p class="meta"><i>World Journal of Clinical Cases</i><span>13(25):107484</span><span class="badge solid">SCIE</span><span><span class="ko">공저자</span><span class="en">Co-author</span></span><a class="doi" href="https://doi.org/10.12998/wjcc.v13.i25.107484">doi:10.12998/wjcc.v13.i25.107484</a></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2024.11</p>
+            <div class="body">
+              <p class="t"><span class="ko">슬관절 전치환술 후 재활 환자에게 시행한 한의 치료의 안전성: 후향적 차트 리뷰</span><span class="en">The Safety of Korean Medicine on Patients after Total Knee Arthroplasty: A Retrospective Chart Review</span></p>
+              <p class="alt ko">The Safety of Korean Medicine on Patients after Total Knee Arthroplasty: A Retrospective Chart Review</p>
+              <p class="meta"><i><span class="ko">한방재활의학과학회지</span><span class="en">Journal of Korean Medicine Rehabilitation</span></i><span>34(4):153–168</span><span class="badge">KCI</span><span class="first"><span class="ko">제1저자</span><span class="en">First author</span></span><a class="doi" href="https://doi.org/10.18325/jkmr.2024.34.4.153">doi:10.18325/jkmr.2024.34.4.153</a></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2024.09</p>
+            <div class="body">
+              <p class="t">Effects of acupuncture on shoulder impingement syndrome: A systematic review and meta-analysis</p>
+              <p class="meta"><i>Medicine</i><span>103(37):e39696</span><span class="badge solid">SCIE</span><span><span class="ko">공저자</span><span class="en">Co-author</span></span><a class="doi" href="https://doi.org/10.1097/md.0000000000039696">doi:10.1097/md.0000000000039696</a></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2024.04</p>
+            <div class="body">
+              <p class="t">Bibliometric analysis of auriculotherapy research trends over the past 20 years</p>
+              <p class="meta"><i>Complementary Therapies in Medicine</i><span>82:103036</span><span class="badge solid">SCIE</span><span><span class="ko">공저자</span><span class="en">Co-author</span></span><a class="doi" href="https://doi.org/10.1016/j.ctim.2024.103036">doi:10.1016/j.ctim.2024.103036</a></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2023.11</p>
+            <div class="body">
+              <p class="t">A Bibliometric Analysis of Acupuncture Treatment of Osteoarthritis over the past 20 Years: 2003–2022</p>
+              <p class="meta"><i>Journal of Acupuncture Research</i><span>40(4):293–307</span><span class="badge">KCI</span><span><span class="ko">공저자</span><span class="en">Co-author</span></span><a class="doi" href="https://doi.org/10.13045/jar.2023.00220">doi:10.13045/jar.2023.00220</a></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2023.10</p>
+            <div class="body">
+              <p class="t">Hypoglycemic Effect of an Herbal Decoction (Modified Gangsimtang) in a Patient with Severe Type 2 Diabetes Mellitus Refusing Oral Anti-Diabetic Medication: A Case Report</p>
+              <p class="meta"><i>Medicina</i><span>59(11):1919</span><span class="badge solid">SCIE</span><span class="first"><span class="ko">제1저자</span><span class="en">First author</span></span><a class="doi" href="https://doi.org/10.3390/medicina59111919">doi:10.3390/medicina59111919</a></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2022.12</p>
+            <div class="body">
+              <p class="t"><span class="ko">우하지냉증을 호소하는 급성 압박골절 환자에 대한 황련해독탕 약침을 중심으로 한 한방 복합치료 1례 증례보고</span><span class="en">A Case Report of Acute Compression Fracture Patient Complaining of Coldness of Right Low Extremity Treated with Hwangryunhaedok-tang Pharmacopuncture</span></p>
+              <p class="alt ko">A Case Report of Acute Compression Fracture Patient Complaining of Coldness of Right Low Extremity Treated with Hwangryunhaedok-tang Pharmacopuncture</p>
+              <p class="meta"><i><span class="ko">스포츠한의학임상약침학회지</span><span class="en">J. Sports Korean Medicine &amp; Clinical Pharmacopuncture</span></i><span>22(1):53–67</span><span><span class="ko">공저자</span><span class="en">Co-author</span></span></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2022.12</p>
+            <div class="body">
+              <p class="t"><span class="ko">청심온담탕가미방과 침구치료를 포함한 복합한의치료로 호전된 심인성 떨림 환자 1례 - 증례보고</span><span class="en">A Case of Psychogenic Tremor Improved by Complex Korean Medicine Treatment Including Cheongshimondam-tang-gamibang and Acupuncture Treatment - A Case Report</span></p>
+              <p class="alt ko">A Case of Psychogenic Tremor Improved by Complex Korean Medicine Treatment Including Cheongshimondam-tang-gamibang and Acupuncture Treatment - A Case Report</p>
+              <p class="meta"><i><span class="ko">대한한방내과학회지</span><span class="en">The Journal of Internal Korean Medicine</span></i><span>43(6):1186–1197</span><span class="badge">KCI</span><span><span class="ko">공저자</span><span class="en">Co-author</span></span><a class="doi" href="https://doi.org/10.22246/jikm.2022.43.6.1186">doi:10.22246/jikm.2022.43.6.1186</a></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2022.12</p>
+            <div class="body">
+              <p class="t"><span class="ko">교통사고 후 양하지 이상감각을 호소하는 하지불안증후군 환자의 한방 복합치료 치험 1례</span><span class="en">A Case of Korean Complex Treatment for a Patient with Restless Legs Syndrome Complaining of Abnormal Sense in Both Legs after a Traffic Accident</span></p>
+              <p class="alt ko">A Case of Korean Complex Treatment for a Patient with Restless Legs Syndrome Complaining of Abnormal Sense in Both Legs after a Traffic Accident</p>
+              <p class="meta"><i><span class="ko">한방척추관절학회지</span><span class="en">J. Korean Medicine Society of Spine &amp; Joint</span></i><span>19(1):133–147</span><span><span class="ko">공저자</span><span class="en">Co-author</span></span></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2019.09</p>
+            <div class="body">
+              <p class="t"><span class="ko">외상후 스트레스장애 치료에 대한 한의학 임상연구 동향</span><span class="en">A Review on Clinical Research Trends in the Treatment of Post Traumatic Stress Disorder (PTSD) in Korean Medicine</span></p>
+              <p class="alt ko">A Review on Clinical Research Trends in the Treatment of Post Traumatic Stress Disorder (PTSD) in Korean Medicine</p>
+              <p class="meta"><i><span class="ko">동의신경정신과학회지</span><span class="en">Journal of Oriental Neuropsychiatry</span></i><span>30(3):251–263</span><span class="badge">KCI</span><span class="first"><span class="ko">공동 제1저자</span><span class="en">Co-first author</span></span><a class="doi" href="https://doi.org/10.7231/jon.2019.30.3.251">doi:10.7231/jon.2019.30.3.251</a></p>
+            </div>
+          </li>
+          <li class="item pub">
+            <p class="date">2016.12</p>
+            <div class="body">
+              <p class="t"><span class="ko">한의학 및 한의학교육에 대한 한의대생들의 인식 조사</span><span class="en">A Research for Recognitions of Korean Medical Student toward Traditional Korean Medicine and Education</span></p>
+              <p class="alt ko">A Research for Recognitions of Korean Medical Student toward Traditional Korean Medicine and Education</p>
+              <p class="meta"><i><span class="ko">대한예방한의학회지</span><span class="en">Journal of Society of Preventive Korean Medicine</span></i><span>20(3):1–8</span><span class="badge">KCI</span><span class="first"><span class="ko">제1저자</span><span class="en">First author</span></span></p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 04 연구과제 -->
+      <section class="sec" id="projects">
+        <h2 class="sec-h"><span class="no">04</span><span class="ko">참여 연구과제</span><span class="en">Research projects</span></h2>
+        <div class="items">
+          <div class="item">
+            <p class="date">2024</p>
+            <div class="body">
+              <p class="t"><span class="ko">심장질환에서 한의치료 효과에 대한 건보자료를 활용한 코호트연구 및 침치료 Responder 예측연구</span><span class="en">National health insurance cohort study of Korean medicine treatment in cardiac disease and prediction of acupuncture responders</span></p>
+              <p class="d"><span class="ko">보건복지부 한의약혁신기술개발사업</span><span class="en">Ministry of Health and Welfare, Korean Medicine Innovative Technology Development Program</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">2024</p>
+            <div class="body">
+              <p class="t"><span class="ko">염증성 장질환에 대한 탁리소독 한약의 기전 규명 및 최적화를 위한 멀티오믹스/네트워크 약리/문헌 네트워크 분석 연구</span><span class="en">Multi-omics, network pharmacology and literature network analysis to elucidate and optimize Takrisodok herbal medicine for inflammatory bowel disease</span></p>
+              <p class="d"><span class="ko">과학기술정보통신부 한의 디지털 융합 기술개발사업</span><span class="en">Ministry of Science and ICT, Korean Medicine Digital Convergence Technology Development Program</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">2022</p>
+            <div class="body">
+              <p class="t"><span class="ko">심부전 한의약 치료의 최적 Regimen과 Responder 예측을 위한 네트워크 분석과 빅데이터 분석을 활용한 중개연구</span><span class="en">Translational study using network and big-data analysis to identify optimal regimens and predict responders to Korean medicine treatment for heart failure</span></p>
+              <p class="d"><span class="ko">과학기술정보통신부 개인기초연구</span><span class="en">Ministry of Science and ICT, Basic Research Program (individual)</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">2022</p>
+            <div class="body">
+              <p class="t"><span class="ko">비만치료에서 마황 부작용을 감소시키는 공공자원(안면감비탕) 기반 신규 한약제제 개발을 위한 네트워크 약리, 전임상 및 관찰연구</span><span class="en">Network pharmacology, preclinical and observational studies for a new herbal formulation (based on Anmyeongambi-tang) that reduces ephedra-related adverse effects in obesity treatment</span></p>
+              <p class="d"><span class="ko">보건복지부 한의약혁신기술개발</span><span class="en">Ministry of Health and Welfare, Korean Medicine Innovative Technology Development Program</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">2019</p>
+            <div class="body">
+              <p class="t"><span class="ko">재난 트라우마에 대한 통합한방치료 프로토콜 개발 - 포항 지진후유증 환자를 통하여</span><span class="en">Development of an integrative Korean medicine treatment protocol for disaster trauma in patients with sequelae of the Pohang earthquake</span></p>
+              <p class="d"><span class="ko">한국연구재단 생애 첫 연구 사업</span><span class="en">National Research Foundation of Korea, First Research Grant</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 강의·발표 -->
+      <section class="sec" id="talks">
+        <h2 class="sec-h"><span class="no">05</span><span class="ko">강의·발표</span><span class="en">Talks &amp; posters</span></h2>
+        <h3 class="sub-h"><span class="ko">강의</span><span class="en">Invited lectures</span></h3>
+        <div class="items">
+          <div class="item">
+            <p class="date">2026</p>
+            <div class="body">
+              <p class="t"><span class="ko">‘급성 외상성 손상에 대한 현대한의학적 처치: 군진 한의학을 중심으로’</span><span class="en">“Modern Korean Medicine Management of Acute Traumatic Injuries: Focusing on Military Korean Medicine”</span></p>
+              <p class="d">K-MEX</p>
+            </div>
+          </div>
+          <div class="item">
+            <p class="date">2025</p>
+            <div class="body">
+              <p class="t"><span class="ko">한의대생 대상 한의과 전공의 진로 멘토링 강의</span><span class="en">Career mentoring lecture on Korean medicine residency for students</span></p>
+              <p class="d">K-MEX</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="body">
+              <p class="t"><span class="ko">한의재택의료연구회 월례 세미나 - 한방재활의학과적 처치를 중심으로</span><span class="en">Monthly seminar, Korean Medicine Home Healthcare Study Group: Korean rehabilitation medicine approaches</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="body">
+              <p class="t"><span class="ko">HAVEST 한의사를 위한 진료기록부 작성 강의</span><span class="en">HAVEST lecture: medical record documentation for Korean medicine doctors</span></p>
+            </div>
+          </div>
+        </div>
+        <h3 class="sub-h"><span class="ko">포스터 발표</span><span class="en">Poster presentations</span></h3>
+        <div class="items">
+          <div class="item"><p class="date">2024</p><div class="body"><p class="t">ICMART</p></div></div>
+          <div class="item"><p class="date">2024</p><div class="body"><p class="t"><span class="ko">전국한의학학술대회 중앙권역</span><span class="en">National Korean Medicine Conference, Central Region</span></p></div></div>
+          <div class="item"><p class="date">2019</p><div class="body"><p class="t"><span class="ko">전국한의학학술대회 중앙권역</span><span class="en">National Korean Medicine Conference, Central Region</span></p></div></div>
+        </div>
+      </section>
+
+      <!-- 06 수상 -->
+      <section class="sec" id="awards">
+        <h2 class="sec-h"><span class="no">06</span><span class="ko">수상·장학</span><span class="en">Awards &amp; scholarships</span><span class="count"><span class="ko">12건</span><span class="en">12</span></span></h2>
+        <div class="items">
+          <div class="item"><p class="date">2025.08</p><div class="body"><p class="t"><span class="ko">보건장학회 연구지원 장학생 · 수여자 대표</span><span class="en">Research Grant Scholar (representative recipient), Health Fellowship Foundation</span></p></div></div>
+          <div class="item"><p class="date">2025.04</p><div class="body"><p class="t"><span class="ko">합동참모의장상</span><span class="en">Award of the Chairman of the Joint Chiefs of Staff</span></p><p class="d"><span class="ko">대한민국 합동참모본부 (대장급) · 군의사관 55기 임관식</span><span class="en">ROK Joint Chiefs of Staff (four-star level) · Commissioning ceremony, Medical Officer Class 55</span></p></div></div>
+          <div class="item"><p class="date">2025.04</p><div class="body"><p class="t"><span class="ko">육군학생군사학교 학교장상</span><span class="en">Commandant’s Award, Army Student Military School</span></p><p class="d"><span class="ko">대한민국 육군 (소장급)</span><span class="en">Republic of Korea Army (major general level)</span></p></div></div>
+          <div class="item"><p class="date">2025.02</p><div class="body"><p class="t"><span class="ko">대한한방병원협회 회장 표창장</span><span class="en">Commendation, President of the Korean Association of Korean Medicine Hospitals</span></p></div></div>
+          <div class="item"><p class="date">2025.01</p><div class="body"><p class="t"><span class="ko">대한한의학회 미래인재육성 프로젝트 미래상</span><span class="en">Future Award, Future Talent Development Project, Society of Korean Medicine</span></p></div></div>
+          <div class="item"><p class="date">2024.02</p><div class="body"><p class="t"><span class="ko">대한한의학회 미래인재육성 프로젝트 미래상</span><span class="en">Future Award, Future Talent Development Project, Society of Korean Medicine</span></p></div></div>
+          <div class="item"><p class="date">2023.11</p><div class="body"><p class="t"><span class="ko">서울특별시의회 의장 표창장</span><span class="en">Commendation, Chairperson of the Seoul Metropolitan Council</span></p></div></div>
+          <div class="item"><p class="date">2019.12</p><div class="body"><p class="t"><span class="ko">대한한의학회 미래인재육성 프로젝트 입상</span><span class="en">Prize, Future Talent Development Project, Society of Korean Medicine</span></p></div></div>
+          <div class="item"><p class="date">2019.12</p><div class="body"><p class="t"><span class="ko">대한한의사협회 한의혜민대상 장학생</span><span class="en">Hanui Hyemin Award Scholarship, Association of Korean Medicine</span></p></div></div>
+          <div class="item"><p class="date">2019.09</p><div class="body"><p class="t"><span class="ko">제13회 홍의학술제 홍의상 (1위)</span><span class="en">Hongui Award (1st place), 13th Hongui Academic Festival</span></p><p class="d"><span class="ko">대구한의대학교 총장상 · 상금 200만원</span><span class="en">President’s Award, Daegu Haany University · KRW 2,000,000</span></p></div></div>
+          <div class="item"><p class="date">2019.02</p><div class="body"><p class="t"><span class="ko">한국지도자육성장학재단 49기 장학생</span><span class="en">49th Scholar, Korea Scholarship Foundation for the Future Leaders</span></p><p class="d"><span class="ko">4개 학기 등록금 전액, 학기당 학업지원금 100만원</span><span class="en">Full tuition for 4 semesters and KRW 1,000,000 stipend per semester</span></p></div></div>
+          <div class="item"><p class="date">2016.09</p><div class="body"><p class="t"><span class="ko">제10회 홍의학술제 홍의상 (1위)</span><span class="en">Hongui Award (1st place), 10th Hongui Academic Festival</span></p><p class="d"><span class="ko">대구한의대학교 총장상 · 상금 150만원</span><span class="en">President’s Award, Daegu Haany University · KRW 1,500,000</span></p></div></div>
+        </div>
+      </section>
+
+      <!-- 07 자격·활동 -->
+      <section class="sec" id="certs">
+        <h2 class="sec-h"><span class="no">07</span><span class="ko">자격·활동</span><span class="en">Licenses &amp; activities</span></h2>
+        <h3 class="sub-h"><span class="ko">자격</span><span class="en">Licenses &amp; certifications</span></h3>
+        <div class="items">
+          <div class="item"><div class="body"><p class="t"><span class="ko">한방재활의학과 전문의</span><span class="en">Board-certified Specialist in Korean Rehabilitation Medicine</span></p></div></div>
+          <div class="item"><p class="date">2026.08</p><div class="body"><p class="t">ADsP</p><p class="d"><span class="ko">데이터분석 준전문가</span><span class="en">Advanced Data Analytics Semi-Professional (Korea Data Agency)</span></p></div></div>
+        </div>
+        <h3 class="sub-h"><span class="ko">대외활동</span><span class="en">Leadership &amp; service</span></h3>
+        <div class="items">
+          <div class="item"><p class="date">2023.11 – 2024.10</p><div class="body"><p class="t"><span class="ko">대한한의과전공의협의회 회장</span><span class="en">President, Korean Association of Korean Medicine Residents</span></p></div></div>
+          <div class="item"><p class="date">2022 – <span class="ko">현재</span><span class="en">Present</span></p><div class="body"><p class="t"><span class="ko">한의정보협동조합 학술이사</span><span class="en">Director of Academic Affairs, Korean Medicine Information Cooperative</span></p></div></div>
+          <div class="item"><p class="date">2017.01 – 2017.12</p><div class="body"><p class="t"><span class="ko">대구한의대학교 한의과대학 학생회장</span><span class="en">Student Body President, College of Korean Medicine, Daegu Haany University</span></p></div></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="foot">
+    <span class="ko">2026년 10월 기준 · 방송대 성적은 2026학년도 1학기까지 확정된 성적입니다.</span>
+    <span class="en">Last updated October 2026 · KNOU grades through Spring 2026.</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var pdf = document.getElementById('pdf-btn');
+    var apply = function (lang) {
+      root.classList.toggle('l-en', lang === 'en');
+      root.lang = lang;
+      pdf.href = 'cv-' + lang + '.pdf';
+      document.title = lang === 'en' ? 'Sungjun Joo — CV' : '주성준 · Sungjun Joo — CV';
+      try { localStorage.setItem('cv-lang', lang); } catch (e) {}
+    };
+    apply(root.classList.contains('l-en') ? 'en' : 'ko');
+    document.getElementById('lang-btn').addEventListener('click', function () {
+      apply(root.classList.contains('l-en') ? 'ko' : 'en');
+    });
+
+    var links = [].slice.call(document.querySelectorAll('.toc a'));
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          links.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); });
+        });
+      }, { rootMargin: '-20% 0px -70% 0px' });
+      document.querySelectorAll('main .sec').forEach(function (s) { io.observe(s); });
+    }
+  })();
+</script>
+</body>
+</html>
